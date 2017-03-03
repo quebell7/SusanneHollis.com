@@ -24,6 +24,7 @@ header {
 
 .nav-text {
   text-transform: uppercase;
+  font-family: proxima-nova, sans-serif;
 }
 
 a {
