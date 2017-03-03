@@ -16,6 +16,10 @@ header {
     background-color: #a49d92;
 }
 
+.top-nav {
+  background-color: none;
+}
+
 .theme-dropdown .dropdown-menu {
   position: static;
   display: block;
