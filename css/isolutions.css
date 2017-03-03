@@ -5,7 +5,9 @@ body {
 }
 
 header {
-  background-color: #ede7de
+  background-color: #ede7de;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 #logo {
@@ -57,9 +59,17 @@ a {
   margin: 5px 0;
 }
 
-.theme-showcase .navbar .container {
+.theme-showcase .navbar {
   width: auto;
 }
+
+.container {
+    padding-right: 24px;
+    padding-left: 24px;
+    margin: 0 auto;
+}
+
+
 
 
 .navbar-toggle.navbar-left {
