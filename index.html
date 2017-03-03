@@ -37,7 +37,9 @@
     <!-- Fixed navbar -->
 
   <header>  
-    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <nav role="navigation" class="navbar">
+
+        <!--removed  navbar-default navbar-fixed-top -->
       <div class="container">
         
         <!-- Title -->
@@ -84,14 +86,21 @@
                         <li class=""><a href="list.php?subCat=CARPET">Carpet</a></li><li class=""><a href="list.php?subCat=CLOISONNE">Cloisonne</a></li><li class=""><a href="list.php?subCat=FABRIC">Fabric</a></li><li class=""><a href="list.php?subCat=GLASS">Glass</a></li><li class=""><a href="list.php?subCat=IVORY">Ivory</a></li><li class=""><a href="list.php?subCat=JEWELRY">Jewelry</a></li><li class=""><a href="list.php?subCat=LACQUER">Lacquer</a></li><li class=""><a href="list.php?subCat=METAL">Metal</a></li><li class=""><a href="list.php?subCat=MISCELLANEOUS">Miscellaneous</a></li><li class=""><a href="list.php?subCat=PORCELAIN">Porcelain</a></li><li class=""><a href="list.php?subCat=REPRODUCTION">Reproduction</a></li><li class=""><a href="list.php?subCat=SILVER">Silver</a></li><li class=""><a href="list.php?subCat=STONE">Stone</a></li><li class=""><a href="list.php?subCat=STRAW">Straw</a></li><li class=""><a href="list.php?subCat=TEXTILES">Textiles</a></li><li class=""><a href="list.php?subCat=WOOD">Wood</a></li><li class=""><a href="list.php?subCat=TERRA-COTTA">Terra-Cotta</a></li><li class=""><a href="list.php?subCat=Clock">Clock</a></li>                  </ul>
                 </li>
                 
-                <li class="hidden-xs "><a href="search.php">Search</a></li>
-           
-                    
-                <li class=""><a href="about.php">About</a></li>
-                <li class=""><a href="press.php">Press</a></li>
-                <li class=""><a href="contact_us.php">Get in Touch</a></li>
-                
+                <li class=""><a href="http://www.hollisgallery.com/" target="_blank">Hollis Gallery<i class="fa fa-search"></i></a></li>
                 <li class=""><a href="login.php">Login</a></li>
+                <li class=""><a href="contact_us.php">Email</a></li>
+                <li class="hidden-xs ">
+                    <a href="search.php">
+                      <span class="">
+                        <i class="fa fa-search"></i>
+                      </span>
+                    </a>
+                </li>
+           
+
+                
+                
+                
             </ul>
             
         </div>
@@ -99,6 +108,71 @@
 
       </div>
     </nav>
+
+
+    <!--main nav-->
+
+    <nav role="navigation" class="navbar">
+
+        <!--removed  navbar-default navbar-fixed-top -->
+      <div class="container">
+        
+        
+        <!-- 'Sticky' (non-collapsing) right-side menu item(s) -->
+        <div class="navbar-header pull-right">
+          <ul class="nav navbar-nav pull-left">
+            <!-- This works well for static text, like a username -->
+            <li class="visible-xs pull-left foo"><a href="search.php" class="" >Search</a></li>
+
+          </ul>
+
+          <!-- Required bootstrap placeholder for the collapsed menu -->
+            <button type="button" class="navbar-toggle navbar-right collapsed navMiniButton" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>    
+        </div>
+
+
+
+        <div id="navbar" class="collapse navbar-collapse navbar-left">
+            
+            <ul class="nav navbar-nav">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Furniture<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class=""><a href="list.php?subCat=FURN - BED">Bed</a></li><li class=""><a href="list.php?subCat=FURN - BENCH">Bench</a></li><li class=""><a href="list.php?subCat=FURN - BOX">Box</a></li><li class=""><a href="list.php?subCat=FURN - CABINET">Cabinet</a></li><li class=""><a href="list.php?subCat=FURN - CHAIR">Chair</a></li><li class=""><a href="list.php?subCat=FURN - CHEST">Chest</a></li><li class=""><a href="list.php?subCat=FURN - CONSOLE">Console</a></li><li class=""><a href="list.php?subCat=FURN - DESK">Desk</a></li><li class=""><a href="list.php?subCat=FURN - DOOR">Door</a></li><li class=""><a href="list.php?subCat=FURN - HEADBOARD">Headboard</a></li><li class=""><a href="list.php?subCat=FURN - MIRROR">Mirror</a></li><li class=""><a href="list.php?subCat=FURN - MISC">Misc</a></li><li class=""><a href="list.php?subCat=FURN - PANEL">Panel</a></li><li class=""><a href="list.php?subCat=FURN - RACK">Rack</a></li><li class=""><a href="list.php?subCat=FURN - SCREEN">Screen</a></li><li class=""><a href="list.php?subCat=FURN - SECRETARY">Secretary</a></li><li class=""><a href="list.php?subCat=FURN - SIDEBOARD">Sideboard</a></li><li class=""><a href="list.php?subCat=FURN - SOFA">Sofa</a></li><li class=""><a href="list.php?subCat=FURN - STAND">Stand</a></li><li class=""><a href="list.php?subCat=FURN - STOOL">Stool</a></li><li class=""><a href="list.php?subCat=FURN - TABLE">Table</a></li><li class=""><a href="list.php?subCat=FURN - TANSU">Transu</a></li><li class=""><a href="list.php?subCat=FURN - TRUNK">Trunk</a></li>                   </ul>
+                </li>
+    
+                <li class=""><a href="list.php?subCat=LIGHTING">Lighting</a></li>
+                <li class=""><a href="list.php?subCat=PICTURES">Art</a></li>
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Objects<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class=""><a href="list.php?subCat=CARPET">Carpet</a></li><li class=""><a href="list.php?subCat=CLOISONNE">Cloisonne</a></li><li class=""><a href="list.php?subCat=FABRIC">Fabric</a></li><li class=""><a href="list.php?subCat=GLASS">Glass</a></li><li class=""><a href="list.php?subCat=IVORY">Ivory</a></li><li class=""><a href="list.php?subCat=JEWELRY">Jewelry</a></li><li class=""><a href="list.php?subCat=LACQUER">Lacquer</a></li><li class=""><a href="list.php?subCat=METAL">Metal</a></li><li class=""><a href="list.php?subCat=MISCELLANEOUS">Miscellaneous</a></li><li class=""><a href="list.php?subCat=PORCELAIN">Porcelain</a></li><li class=""><a href="list.php?subCat=REPRODUCTION">Reproduction</a></li><li class=""><a href="list.php?subCat=SILVER">Silver</a></li><li class=""><a href="list.php?subCat=STONE">Stone</a></li><li class=""><a href="list.php?subCat=STRAW">Straw</a></li><li class=""><a href="list.php?subCat=TEXTILES">Textiles</a></li><li class=""><a href="list.php?subCat=WOOD">Wood</a></li><li class=""><a href="list.php?subCat=TERRA-COTTA">Terra-Cotta</a></li><li class=""><a href="list.php?subCat=Clock">Clock</a></li>                  </ul>
+                </li>
+                
+           
+                    
+                <li class=""><a href="about.php">About</a></li>
+                <li class=""><a href="press.php">Press</a></li>
+
+            </ul>
+            
+        </div>
+
+
+      </div>
+    </nav>
+
+
+
+
 </header>
 
 

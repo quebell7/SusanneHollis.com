@@ -8,6 +8,14 @@ header {
   background-color: #ede7de
 }
 
+.navbar {
+    /* position: relative; */
+    /* min-height: 50px; */
+    /* margin-bottom: 20px; */
+    border: 1px solid transparent;
+    background-color: #a49d92;
+}
+
 .theme-dropdown .dropdown-menu {
   position: static;
   display: block;
