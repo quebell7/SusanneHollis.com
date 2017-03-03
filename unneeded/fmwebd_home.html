@@ -1,0 +1,67 @@
+<!-- This is a very basic sample file that lists all the hosted FileMaker WebDirect solutions. 
+You can customize this page and provide a custom home page for your FileMaker WebDirect users. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function loadXMLDoc()
+{
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+  	{// code for IE7+, Firefox, Chrome, Opera, Safari
+  		xmlhttp=new XMLHttpRequest();
+  	}
+		else
+  	{// code for IE6, IE5
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=function()
+		{
+  		//alert ("state = " + xmlhttp.readyState);
+  		//alert ( "content = " + xmlhttp.responseText);
+  
+		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    	document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    	var response = xmlhttp.responseText;
+    	generateContent (response);
+    }
+	}
+  
+	//Change the IP address to point to your Web Publishing engine in a 2 machine config
+	xmlhttp.open("GET","/fmi/webd/dbnames",true);
+	xmlhttp.send();
+}
+
+
+
+function generateContent(jsonStr) {
+	
+ document.write('<h2>FileMaker WebDirect Database Home Page Sample </h2>');
+  
+  var obj = []; 
+  obj = JSON.parse(jsonStr);  // convert json string into object
+
+	//iterate through and print out links to each of the databases
+	for (var prop in obj) {
+		var name = prop;
+		var url = obj[prop];
+		document.write('<a href=' + url + '>' + name + '</a> </br>');
+   }
+}
+
+</script>
+
+</head>
+
+<body onload = "loadXMLDoc()">
+
+<div id="myDiv"></div>
+
+
+</body>
+</html>
+
+
+
