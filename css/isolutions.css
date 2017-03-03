@@ -37,6 +37,10 @@ a {
   color: #616161
 }
 
+.navbar-nav>li>a {
+     text-shadow: none; 
+}
+
 .theme-dropdown .dropdown-menu {
   position: static;
   display: block;
