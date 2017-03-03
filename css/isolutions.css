@@ -25,6 +25,8 @@ header {
 .nav-text {
   text-transform: uppercase;
   font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 1.05em;
   letter-spacing: .04em;
 }
