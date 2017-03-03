@@ -8,6 +8,10 @@ header {
   background-color: #ede7de
 }
 
+#logo {
+  width: 50%;
+}
+
 .navbar {
     /* position: relative; */
     /* min-height: 50px; */
