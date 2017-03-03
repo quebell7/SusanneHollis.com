@@ -21,6 +21,10 @@ header {
   background-color: #ede7de;
 }
 
+a {
+  color: #616161
+}
+
 .theme-dropdown .dropdown-menu {
   position: static;
   display: block;
