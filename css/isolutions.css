@@ -24,6 +24,12 @@ header {
     border-radius: 0px;
 }
 
+@media (min-width: 768px) {
+  .navbar-brand {
+    margin-left: 0px;
+  }
+}
+
 .top-nav {
   background-color: #ede7de;
   padding-top: 20px;
