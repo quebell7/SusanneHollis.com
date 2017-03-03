@@ -29,6 +29,10 @@ header {
   letter-spacing: .04em;
 }
 
+.main-nav {
+  color: #e9e3d9;
+}
+
 a {
   color: #616161
 }
