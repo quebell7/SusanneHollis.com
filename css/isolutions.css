@@ -19,6 +19,11 @@ header {
 
 .top-nav {
   background-color: #ede7de;
+  padding-top: 20px;
+}
+
+.nav-text {
+  text-transform: uppercase;
 }
 
 a {
