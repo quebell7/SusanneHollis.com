@@ -26,6 +26,14 @@ header {
     margin-bottom: 0px;
 }
 
+.navbar-brand {
+  float: left;
+  height: 100px;
+  padding: 15px 15px;
+/*  font-size: 18px;
+  line-height: 20px;*/
+}
+
 @media (min-width: 768px) {
   .navbar-brand {
     margin-left: 0px;
@@ -64,6 +72,10 @@ a {
 
 .navbar-nav>li>a {
      text-shadow: none; 
+}
+
+.icon-spacer {
+  padding-left: 6px;
 }
 
 .theme-dropdown .dropdown-menu {
