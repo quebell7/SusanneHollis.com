@@ -39,70 +39,52 @@
 
     <!-- Fixed navbar -->
 
-  <header>  
-    <nav role="navigation" class="navbar top-nav">
 
-        <!--removed  navbar-default navbar-fixed-top -->
-      <div class="container">
-        
-        <!-- Title -->
-        <div class="navbar-brand">
-          <a href="http://www.susannehollis.com/"><img id="logo" src="images/SusanneHollis.gif" alt="Susanne Hollis Logo"></a>
+<header class="page-header">
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">  
+  
+    <div class="navbar-header">
+        <div class="navbar-header">
+            <a class="navbar-left" href="http://www.susannehollis.com/"><img class="smaller-logo" src="images/SusanneHollis.gif" alt="Susanne Hollis Logo">
+            </a>
         </div>
-        
-        <!-- 'Sticky' (non-collapsing) right-side menu item(s) -->
-        <div class="">
-          <ul class="">
-            <!-- This works well for static text, like a username -->
-            <li class="visible-xs pull-left"><a href="search.php" class="" >Search</a></li>
 
-          </ul>
-
-          <!-- Required bootstrap placeholder for the collapsed menu -->
-            <button type="button" class="navbar-toggle navbar-right collapsed navMiniButton" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            </button>    
-        </div>
+            </button>
+    </div>
 
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav pull-right is-smallnav-padding">
+            <li class="nav-text">
+                <a href="http://www.hollisgallery.com/" target="_blank">Hollis Gallery<i class="icon-spacer fa fa-external-link" aria-hidden="true"></i>
+                </a>
+            </li>
 
-
-        <div id="navbar" class="collapse navbar-collapse navbar-right">
+            <li class="nav-text"><a href="login.php">Login</a></li>
             
-            <ul class="nav navbar-nav">
-                
-                <li class="nav-text"><a href="http://www.hollisgallery.com/" target="_blank">Hollis Gallery<i class="icon-spacer fa fa-external-link" aria-hidden="true"></i></a></li>
-                <li class="nav-text"><a href="login.php">Login</a></li>
-                <li class="nav-text"><a href="contact_us.php">Email</a></li>
-                <li class="hidden-xs nav-text">
-                    <a href="search.php">
+            <li class="nav-text"><a href="contact_us.php">Email</a></li>
+
+            <li class="hidden-xs nav-text">
+                <a href="search.php">
                       <span class="">
                         <i class="fa fa-search"></i>
                       </span>
-                    </a>
-                </li>
-           
+                </a>
+            </li>
+        </ul>
+   
+    </div>
+</div>
 
-                
-                
-                
-            </ul>
-            
-        </div>
-
-
-      </div>
-    </nav>
-
-
-    <!--main nav-->
-
-    <nav role="navigation" class="navbar">
+<nav role="navigation" class="navbar">
 
         <!--removed  navbar-default navbar-fixed-top -->
-      <div class="container">
+      <div class="container lower-nav">
         
         
         <!-- 'Sticky' (non-collapsing) right-side menu item(s) -->
@@ -130,7 +112,7 @@
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Furniture<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-type">
                         <li class=""><a href="list.php?subCat=FURN - BED">Bed</a></li><li class=""><a href="list.php?subCat=FURN - BENCH">Bench</a></li><li class=""><a href="list.php?subCat=FURN - BOX">Box</a></li><li class=""><a href="list.php?subCat=FURN - CABINET">Cabinet</a></li><li class=""><a href="list.php?subCat=FURN - CHAIR">Chair</a></li><li class=""><a href="list.php?subCat=FURN - CHEST">Chest</a></li><li class=""><a href="list.php?subCat=FURN - CONSOLE">Console</a></li><li class=""><a href="list.php?subCat=FURN - DESK">Desk</a></li><li class=""><a href="list.php?subCat=FURN - DOOR">Door</a></li><li class=""><a href="list.php?subCat=FURN - HEADBOARD">Headboard</a></li><li class=""><a href="list.php?subCat=FURN - MIRROR">Mirror</a></li><li class=""><a href="list.php?subCat=FURN - MISC">Misc</a></li><li class=""><a href="list.php?subCat=FURN - PANEL">Panel</a></li><li class=""><a href="list.php?subCat=FURN - RACK">Rack</a></li><li class=""><a href="list.php?subCat=FURN - SCREEN">Screen</a></li><li class=""><a href="list.php?subCat=FURN - SECRETARY">Secretary</a></li><li class=""><a href="list.php?subCat=FURN - SIDEBOARD">Sideboard</a></li><li class=""><a href="list.php?subCat=FURN - SOFA">Sofa</a></li><li class=""><a href="list.php?subCat=FURN - STAND">Stand</a></li><li class=""><a href="list.php?subCat=FURN - STOOL">Stool</a></li><li class=""><a href="list.php?subCat=FURN - TABLE">Table</a></li><li class=""><a href="list.php?subCat=FURN - TANSU">Transu</a></li><li class=""><a href="list.php?subCat=FURN - TRUNK">Trunk</a></li>                   </ul>
                 </li>
     
@@ -140,7 +122,7 @@
                 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Objects<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-type">
                         <li class=""><a href="list.php?subCat=CARPET">Carpet</a></li><li class=""><a href="list.php?subCat=CLOISONNE">Cloisonne</a></li><li class=""><a href="list.php?subCat=FABRIC">Fabric</a></li><li class=""><a href="list.php?subCat=GLASS">Glass</a></li><li class=""><a href="list.php?subCat=IVORY">Ivory</a></li><li class=""><a href="list.php?subCat=JEWELRY">Jewelry</a></li><li class=""><a href="list.php?subCat=LACQUER">Lacquer</a></li><li class=""><a href="list.php?subCat=METAL">Metal</a></li><li class=""><a href="list.php?subCat=MISCELLANEOUS">Miscellaneous</a></li><li class=""><a href="list.php?subCat=PORCELAIN">Porcelain</a></li><li class=""><a href="list.php?subCat=REPRODUCTION">Reproduction</a></li><li class=""><a href="list.php?subCat=SILVER">Silver</a></li><li class=""><a href="list.php?subCat=STONE">Stone</a></li><li class=""><a href="list.php?subCat=STRAW">Straw</a></li><li class=""><a href="list.php?subCat=TEXTILES">Textiles</a></li><li class=""><a href="list.php?subCat=WOOD">Wood</a></li><li class=""><a href="list.php?subCat=TERRA-COTTA">Terra-Cotta</a></li><li class=""><a href="list.php?subCat=Clock">Clock</a></li>                  </ul>
                 </li>
                 
@@ -156,6 +138,47 @@
 
       </div>
     </nav>
+
+
+
+<!-- <div class="navbar navbar-inverse navbar-static-top" role="navigation"> 
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="collapse navbar-collapse">
+        
+        <ul class="nav navbar-nav">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+        </ul>
+        <button type="button" class="btn btn-default navbar-btn">Button</button>
+        <div class="col-sm-3 col-md-3 pull-right">
+   
+        </div>
+        
+    </div>
+</div> -->
+
+
+
 
 
 
