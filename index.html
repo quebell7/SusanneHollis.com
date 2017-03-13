@@ -45,7 +45,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">  
   
     <div class="navbar-header">
-        <div class="navbar-header">
+        <div class="">
             <a class="navbar-left" href="http://www.susannehollis.com/"><img class="smaller-logo" src="images/SusanneHollis.gif" alt="Susanne Hollis Logo">
             </a>
         </div>
@@ -68,13 +68,15 @@
             <li class="nav-text"><a href="login.php">Login</a></li>
             
             <li class="nav-text"><a href="contact_us.php">Email</a></li>
-
+<!-- 
             <li class="hidden-xs nav-text">
-                <a href="search.php">
+ -->
+            <li class="pull-left nav-text"><a href="search.php" class="">Search
+                
                       <span class="">
                         <i class="fa fa-search"></i>
-                      </span>
-                </a>
+                      </span></a>
+                
             </li>
         </ul>
    
@@ -88,20 +90,20 @@
         
         
         <!-- 'Sticky' (non-collapsing) right-side menu item(s) -->
-        <div class="navbar-header pull-right">
-          <ul class="nav navbar-nav pull-left">
+        <div class="pull-right">
+          <ul class="nav navbar-nav pull-left hide-this">
             <!-- This works well for static text, like a username -->
-            <li class="visible-xs pull-left foo"><a href="search.php" class="" >Search</a></li>
+         <!--    <li class="visible-xs pull-left"><a href="search.php" class="" >Search</a></li> -->
 
           </ul>
 
           <!-- Required bootstrap placeholder for the collapsed menu -->
-            <button type="button" class="navbar-toggle navbar-right collapsed navMiniButton" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <!-- <button type="button" class="navbar-toggle navbar-right collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            </button>    
+            </button>     -->
         </div>
 
 
